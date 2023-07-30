@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Location } from '@angular/common';
 import { Router, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs/operators';
-
 @Component({
   selector: 'header-component',
   templateUrl: './header.component.html',
@@ -28,7 +27,7 @@ export class HeaderComponent implements OnInit {
 
   checkUrl(): void {
     const url = this.location.path();
-    
+
     this.isLands = url.includes('/lands');
     this.isAppartment = url.includes('/apartments');
     this.isHouses = url.includes('/houses');

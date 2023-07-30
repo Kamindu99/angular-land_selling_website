@@ -1,28 +1,30 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
-    <div class="container">
-     <img class="headingimgcss" src="https://cdn-icons-png.flaticon.com/512/3084/3084978.png"/> <a class="navbar-brand headingcss" href="#">Blue Sky Lands</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item " [class.active]="isHome">
-            <a class="nav-link" routerLink="/">Home</a>
-          </li>
-          <li class="nav-item" [class.active]="isLands">
-            <a class="nav-link" routerLink="/lands">Lands</a>
-          </li>
-          <li class="nav-item " [class.active]="isHouses">
-            <a class="nav-link" routerLink="/houses">Houses</a>
-          </li>
-          <li class="nav-item " [class.active]="isAppartment">
-            <a class="nav-link" routerLink="/apartments">Apartments</a>
-          </li>
-          <li class="nav-item" [class.active]="isAboutUs">
-            <a class="nav-link" routerLink="/aboutus">About Us</a>
-          </li>
-        </ul>
-      </div>
+  <div class="container">
+    <img class="headingimgcss" src="https://cdn-icons-png.flaticon.com/512/3084/3084978.png" /> <a
+      class="navbar-brand headingcss" href="#">Blue Sky Lands</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+      aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item " [class.active]="isHome">
+          <mat-icon class="navIcon">home</mat-icon>
+          <a class="nav-link" routerLink="/">Home</a>
+        </li>
+        <li class="nav-item" [class.active]="isLands">
+          <a class="nav-link" routerLink="/lands">Lands</a>
+        </li>
+        <li class="nav-item " [class.active]="isHouses">
+          <a class="nav-link" routerLink="/houses">Houses</a>
+        </li>
+        <li class="nav-item " [class.active]="isAppartment">
+          <a class="nav-link" routerLink="/apartments">Apartments</a>
+        </li>
+        <li class="nav-item" [class.active]="isAboutUs">
+          <a class="nav-link" routerLink="/aboutus">About Us</a>
+        </li>
+      </ul>
     </div>
-      <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
-  </nav>
+  </div>
+</nav>

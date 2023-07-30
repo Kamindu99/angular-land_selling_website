@@ -39,3 +39,15 @@
     body, html {
       height: 100%;
     }
+
+    .social-icon{
+      color: white;
+      margin: 10px;
+    }
+
+    .headingimgcss {
+      height: 40px;
+      width: 40px;
+      margin-top: -10px;
+      margin-right: 5px;
+  }

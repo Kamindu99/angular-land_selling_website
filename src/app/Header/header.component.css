@@ -4,18 +4,33 @@
     margin-right: 200px;
     margin-left: 15px;
 }
+
 .headingimgcss {
     margin-left: -100px;
     height: 50px;
     width: 50px;
 }
 
-.collapse a{
+.collapse a {
     font-size: 24px;
     padding-right: 40px;
 }
 
-.active{
+.active {
     color: #000;
+    font-weight: 700;
+}
+
+.nav-item {
+    display: flex;
+}
+
+.navIcon {
+    margin-top: 15px;
+    margin-right: -7px;
+    color: rgb(157, 157, 157);
+}
+ .active .navIcon{
+    color: #000000;
     font-weight: 700;
 }

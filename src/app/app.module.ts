@@ -6,6 +6,8 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import { HttpClientModule } from '@angular/common/http';
 import { MatIconModule } from '@angular/material/icon';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import { CarouselModule } from '@coreui/angular';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -36,7 +38,9 @@ import { HousespageComponent } from './housespage/housespage.component';
     MatButtonModule,
     MatCardModule,
     HttpClientModule,
-    MatIconModule
+    MatIconModule,
+    MatProgressSpinnerModule,
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,19 +1,31 @@
 <div style="margin-top:130px;">
 
   <div class="row mr-5 ml-5">
+   
+    <mat-spinner class="spinnercss" *ngIf="isLoading" color="accent"></mat-spinner>
+
+    <c-carousel class="carouselcss" [dark]="true" [wrap]="false">
+      <c-carousel-inner>
+        <c-carousel-item *ngFor="let slide of slides; index as i;">
+          <img
+            [src]="slide.src"
+            alt="{{slide.title}}"
+            class="d-block w-100"
+            loading="lazy"
+          />
+        </c-carousel-item>
+      </c-carousel-inner>
+      <c-carousel-control [routerLink] caption="Previous" direction="prev"></c-carousel-control>
+      <c-carousel-control [routerLink] caption="Next" direction="next"></c-carousel-control>
+    </c-carousel>
 
     <div *ngFor="let lands of landsData" class="card-wrapper col-lg-3 col-md-6 col-xs-12 mb-5">
       <mat-card class="example-card">
-        <!-- <mat-card-header class="cardheader">
-          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>{{lands.name}}</mat-card-title>
-          <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-        </mat-card-header> -->
         <img mat-card-image src={{lands.image}} class="landImage" alt="Photo of land">
         <mat-card-content style="margin-top: 10px;">
-          <p>{{ lands.name?.toUpperCase() }}</p>
-          <span class="disabled"> {{lands.location}}</span>
-          <p> Rs.{{lands?.price?.toLocaleString(undefined, {
+          <h5>{{ lands.name?.toUpperCase() }}</h5>
+          <span class="disabled"> <mat-icon style="margin-bottom: -7px;">location_on</mat-icon> {{lands.location}}</span>
+          <p> <mat-icon style="margin-bottom: -7px;" >price_change</mat-icon>  Rs.{{lands?.price?.toLocaleString(undefined, {
             minimumFractionDigits: 2,
             maximumFractionDigits: 2
             }) || 0.00}} Upward</p>

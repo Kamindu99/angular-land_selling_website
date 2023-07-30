@@ -2,28 +2,37 @@
   max-width: 400px;
   height: 100%;
   background-color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.example-card:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.534);
+  scale: 1.001;
 }
 
 .example-card p {
   margin: 0;
   padding: 0;
 }
+
 .example-card span {
   margin: 0;
   padding: 0;
   color: rgb(146, 146, 146);
 }
 
-.landImage{
+.landImage {
   width: 100%;
   height: 200px;
   object-fit: cover;
 }
+
 .cardfooter {
   display: flex;
   justify-content: flex-end;
   width: 100%;
 }
+
 .cardfooter button {
   color: black;
   background-color: #e0e0e0;
@@ -32,4 +41,25 @@
 
 .cardfooter button:hover {
   background-color: #518bff;
+}
+
+.spinnercss {
+  left: 50%;
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+.carouselcss{
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.carouselcss img{
+  height: 300px;
+  object-fit: cover;
+}
+.spinnercsstext{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
 }

@@ -127,7 +127,7 @@
   dependencies:
     "tslib" "^2.3.0"
 
-"@angular/cdk@^16.1.6", "@angular/cdk@16.1.6":
+"@angular/cdk@^16.1.0", "@angular/cdk@^16.1.6", "@angular/cdk@16.1.6":
   "integrity" "sha512-ICwX3OyxmVotlhzlkvilvfZz32y9RXvUAaVtPsU1i20orgQBOMp+JGdP/vahLjTQRioUus834Wh6bu0KdHjCEg=="
   "resolved" "https://registry.npmjs.org/@angular/cdk/-/cdk-16.1.6.tgz"
   "version" "16.1.6"
@@ -160,7 +160,7 @@
     "symbol-observable" "4.0.0"
     "yargs" "17.7.2"
 
-"@angular/common@^16.0.0 || ^17.0.0", "@angular/common@^16.1.0", "@angular/common@16.1.6":
+"@angular/common@^16.0.0", "@angular/common@^16.0.0 || ^17.0.0", "@angular/common@^16.1.0", "@angular/common@16.1.6":
   "integrity" "sha512-30Y8DGs+oosA+BcDZd1SuZ4HDT+DVZ6lVT4L+mBUH1BSkNna08FrbmrGQxO82CcxU6ZK0q1YLVkkb5cGx8y9ew=="
   "resolved" "https://registry.npmjs.org/@angular/common/-/common-16.1.6.tgz"
   "version" "16.1.6"
@@ -188,7 +188,7 @@
   dependencies:
     "tslib" "^2.3.0"
 
-"@angular/core@^16.0.0 || ^17.0.0", "@angular/core@^16.1.0", "@angular/core@16.1.6":
+"@angular/core@^16.0.0", "@angular/core@^16.0.0 || ^17.0.0", "@angular/core@^16.1.0", "@angular/core@16.1.6":
   "integrity" "sha512-tUXvVLc+Vbl8Se7hajwyUTNmKD9uPq+SZH6x8sRM2n5azzjBZltOoJfzxK5JKAkiFf/KkQhteHkMBfoDLZ2tmw=="
   "resolved" "https://registry.npmjs.org/@angular/core/-/core-16.1.6.tgz"
   "version" "16.1.6"
@@ -1249,6 +1249,26 @@
   "resolved" "https://registry.npmjs.org/@colors/colors/-/colors-1.5.0.tgz"
   "version" "1.5.0"
 
+"@coreui/angular@^4.5.10":
+  "integrity" "sha512-kSHwBfqYr+b2Hm2cxswx6BNzf73BnSuaEdqBEyivs0KQgyol3QAyZzjyYmGIIOYjAsZstMWstQXUumN083ZKbw=="
+  "resolved" "https://registry.npmjs.org/@coreui/angular/-/angular-4.5.10.tgz"
+  "version" "4.5.10"
+  dependencies:
+    "@popperjs/core" "~2.11.6"
+    "tslib" "^2.3.0"
+
+"@coreui/icons-angular@^4.5.8":
+  "integrity" "sha512-oll1Bj09Nr/BntulpRQPyBJG+GF255AtC3t0fpRzfQeqcoytrcjPYaYSkOucn0orTQ50JVDa2U+ZkphK/50Uxg=="
+  "resolved" "https://registry.npmjs.org/@coreui/icons-angular/-/icons-angular-4.5.8.tgz"
+  "version" "4.5.8"
+  dependencies:
+    "tslib" "^2.3.0"
+
+"@coreui/icons@^2.1.0 || ^3.0.0":
+  "integrity" "sha512-u9UKEcRMyY9pa4jUoLij8pAR03g5g6TLWV33/Mx2ix8sffyi0eO4fLV8DSTQljDCw938zt7KYog5cVKEAJUxxg=="
+  "resolved" "https://registry.npmjs.org/@coreui/icons/-/icons-3.0.1.tgz"
+  "version" "3.0.1"
+
 "@discoveryjs/json-ext@0.5.7":
   "integrity" "sha512-dBVuXR082gk3jsFp7Rd/JI4kytwGHecnCoTtXFb7DB6CNHp4rg5k1bhg0nWdLGLnOV71lmDzGQaLMy8iPLY0pw=="
   "resolved" "https://registry.npmjs.org/@discoveryjs/json-ext/-/json-ext-0.5.7.tgz"
@@ -2121,6 +2141,11 @@
   "integrity" "sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg=="
   "resolved" "https://registry.npmjs.org/@pkgjs/parseargs/-/parseargs-0.11.0.tgz"
   "version" "0.11.0"
+
+"@popperjs/core@~2.11.6":
+  "integrity" "sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A=="
+  "resolved" "https://registry.npmjs.org/@popperjs/core/-/core-2.11.8.tgz"
+  "version" "2.11.8"
 
 "@schematics/angular@16.1.5":
   "integrity" "sha512-GwSweqKGjMc9oqU6fukqYKlBflCCDA/l2qfA60YIdf4SubaZnIUpkpNXTbWeFRPJh8zQShb8OZE7cVj8MZRruw=="

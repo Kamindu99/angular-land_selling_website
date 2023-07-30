@@ -1,0 +1,56 @@
+body {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+
+h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  font-size: 3.0em;
+  padding-bottom: 20px;
+}
+
+.profile-pic {
+  margin: 20px auto;
+  width: 250px;
+}
+
+.profile-pic img {
+  border-radius: 100%;
+  border: 3px solid grey;
+  margin-bottom: 40px;
+}
+
+.profile-pic img:hover {
+  border-radius: 3px;
+}
+
+#about {
+  padding-top: 20px;
+  background-color: #fff;
+  color: #333;
+  padding-bottom: 20px;
+  font-size: 18px;
+}
+
+#portfolio {
+  padding-top: 25px;
+}
+
+.portfolio-title {
+  font-weight: bold;
+}
+
+.portfolio-subtitle {
+  font-style: italic;
+}
+
+.thumbnail:hover {
+  background-color: #333;
+  color: #ffffff;
+}
+
+#about h1 {
+  padding-top: 20px;
+}

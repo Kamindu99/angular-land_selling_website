@@ -4,7 +4,7 @@
         <div class="row d-flex justify-content-center mr-1">
             <div class="col-md-10">
                 <div class="card p-3  py-4">
-                    <h5>An Easier way to find your Housing</h5>
+                    <h5>An Easier way to find your Apartment</h5>
                     <div class="row g-3 mt-2">
                         <div class="col-md-3">
                             <div class="dropdown">
@@ -40,13 +40,13 @@
                             <div class="card card-body">
                                 <div class="row">
                                     <div class="col-md-4">
-                                        <input type="text" placeholder="Property ID" class="form-control">
+                                        <input type="text" placeholder="Search by District" class="form-control">
                                     </div>
                                     <div class="col-md-4">
-                                        <input type="text" class="form-control" placeholder="Search by MAP">
+                                        <input type="text" class="form-control" placeholder="Search by Name">
                                     </div>
                                     <div class="col-md-4">
-                                        <input type="text" class="form-control" placeholder="Search by Country">
+                                        <input type="text" class="form-control" placeholder="Search by Price">
                                     </div>
                                 </div>
                             </div>
@@ -56,4 +56,29 @@
             </div>
         </div>
     </div>
+
+    <div class="row mr-5 ml-5">
+        <mat-spinner class="spinnercss" *ngIf="isLoading" color="accent"></mat-spinner>
+        <div *ngFor="let apartment of apartmentData" class="card-wrapper col-lg-3 col-md-6 col-xs-12 mb-5">
+          <mat-card class="example-card">
+            <img mat-card-image src={{apartment.image}} class="landImage" alt="Photo of land">
+            <mat-card-content style="margin-top: 10px;">
+              <h5>{{ apartment.name?.toUpperCase() }}</h5>
+              <span class="disabled"> <mat-icon style="margin-bottom: -7px;">location_on</mat-icon> {{apartment.location}}</span>
+              <p> <mat-icon style="margin-bottom: -7px;" >price_change</mat-icon>  Rs.{{apartment?.price?.toLocaleString(undefined, {
+                minimumFractionDigits: 2,
+                maximumFractionDigits: 2
+                }) || 0.00}} Upward</p>
+            </mat-card-content>
+            <mat-card-actions>
+              <div class="cardfooter">
+                <button mat-button (click)="openDialog(apartment)">MORE DETAILS</button>
+                <button mat-button>BUY</button>
+              </div>
+            </mat-card-actions>
+          </mat-card>
+        </div>
+    
+      </div>
+      
 </div>

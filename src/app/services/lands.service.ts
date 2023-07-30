@@ -15,5 +15,11 @@ export class LandsService {
   getLandsList(): Observable<any> {
     return this._http.get('http://localhost:3000/lands');
   }
+  getApartmentsList(): Observable<any> {
+    return this._http.get('http://localhost:3000/apartments');
+  }
+  getHousesList(): Observable<any> {
+    return this._http.get('http://localhost:3000/houses');
+  }
 
 }

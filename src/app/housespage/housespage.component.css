@@ -1,0 +1,140 @@
+body {
+    background-color: #00838F;
+}
+
+.advanced {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.btn-secondary,
+.btn-secondary:focus,
+.btn-secondary:active {
+    color: #fff;
+    background-color: #00838f !important;
+    border-color: #00838f !important;
+    box-shadow: none;
+}
+
+.advanced {
+    color: #00838f !important;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border: 1px solid #00838f;
+}
+
+.example-card {
+    max-width: 400px;
+    height: 100%;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.example-card:hover {
+    box-shadow: 0 0 11px rgba(33, 33, 33, 0.534);
+    scale: 1.001;
+}
+
+.example-card p {
+    margin: 0;
+    padding: 0;
+}
+
+.example-card span {
+    margin: 0;
+    padding: 0;
+    color: rgb(146, 146, 146);
+}
+
+.landImage {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.cardfooter {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.cardfooter button {
+    color: black;
+    background-color: #e0e0e0;
+    margin: 10px;
+}
+
+.cardfooter button:hover {
+    background-color: #518bff;
+}
+
+.spinnercss {
+    left: 50%;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+#intro {
+    display: block;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#intro {
+    padding: 30px 0 5px 0;
+    font-size: 16px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#intro .fl_left {
+    display: block;
+    float: left;
+    width: 60%;
+    
+    margin: 0;
+    padding: 30px;
+    color: #FFFFFF;
+    background-color: #2684B7;
+}
+
+#intro .fl_left h2 {
+    font-size: 46px;
+    margin: 0 0 15px 0;
+    padding: 0;
+    border: none;
+    color: #FFFFFF;
+    background-color: #2684B7;
+}
+
+#intro .fl_left p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6em;
+}
+
+#intro .fl_left p.readmore {
+    display: block;
+    width: 100%;
+    margin: 20px 0 0 0;
+    padding: 0;
+    text-align: right;
+    line-height: normal;
+}
+
+#intro .fl_left p.readmore a {
+    padding: 8px 15px;
+    font-size: 18px;
+    color: #FFFFFF;
+    background-color: #1C5E82;
+}
+
+#intro .fl_right img{
+    height: 277px;
+}
+.clear{clear:both;}
+br.clear{clear:both; margin-top:-15px;}
+

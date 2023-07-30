@@ -1,3 +1,43 @@
-<div style="margin-top:77px;">
-    kamindukamindu
+<div style="margin-top:120px;">
+    <div class="wrapper col3">
+        <div id="intro">
+          <div class="fl_left">
+            <h2>Best Houses in Sri Lanka for Sale</h2>
+            <p>
+                This page is dedicated to houses for sale in Sri Lanka. We are a team of dedicated professionals who are committed
+                to providing the best service to our customers. We are here to help you find the ideal property
+                 in Sri Lanka.
+            </p>
+            <p class="readmore"><a href="#">Read More &raquo;</a></p>
+          </div>
+          <div class="fl_right"><img src="https://img.freepik.com/premium-vector/concept-house-sale-sale-rental-real-estate-house-plot-land-with-surroundings-trees-cartoon-style-vector-illustration-isolated-white-background_528104-307.jpg" alt="" /></div>
+          <br class="clear" />
+        </div>
+      </div>
+
+    <div class="row mr-5 ml-5 mt-5">
+        <mat-spinner class="spinnercss" *ngIf="isLoading" color="accent"></mat-spinner>
+        <div *ngFor="let house of houseData" class="card-wrapper col-lg-3 col-md-6 col-xs-12 mb-5">
+            <mat-card class="example-card">
+                <img mat-card-image src={{house.image}} class="landImage" alt="Photo of land">
+                <mat-card-content style="margin-top: 10px;">
+                    <h5>{{ house.name?.toUpperCase() }}</h5>
+                    <span class="disabled"> <mat-icon style="margin-bottom: -7px;">location_on</mat-icon>
+                        {{house.location}}</span>
+                    <p> <mat-icon style="margin-bottom: -7px;">price_change</mat-icon>
+                        Rs.{{house?.price?.toLocaleString(undefined, {
+                        minimumFractionDigits: 2,
+                        maximumFractionDigits: 2
+                        }) || 0.00}} Upward</p>
+                </mat-card-content>
+                <mat-card-actions>
+                    <div class="cardfooter">
+                        <button mat-button (click)="openDialog(house)">MORE DETAILS</button>
+                        <button mat-button>BUY</button>
+                    </div>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+
+    </div>
 </div>

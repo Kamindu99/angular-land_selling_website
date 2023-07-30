@@ -6,19 +6,19 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item active">
+          <li class="nav-item " [class.active]="isHome">
             <a class="nav-link" routerLink="/">Home</a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item" [class.active]="isLands">
             <a class="nav-link" routerLink="/lands">Lands</a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item " [class.active]="isHouses">
             <a class="nav-link" routerLink="/houses">Houses</a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item " [class.active]="isAppartment">
             <a class="nav-link" routerLink="/apartments">Apartments</a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item" [class.active]="isAboutUs">
             <a class="nav-link" routerLink="/aboutus">About Us</a>
           </li>
         </ul>

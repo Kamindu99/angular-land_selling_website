@@ -1,0 +1,61 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "lands":[
+    {
+      "id":1,
+      "name":"land1",
+      "area":100,
+      "price":100000,
+      "location":"location1",
+      "owner":"owner1",
+      "description":"description1",
+      "image":"https://media.istockphoto.com/id/1372495059/photo/land-for-sale-sign-in-green-grass-field-for-housing-development-and-construction.jpg?s=612x612&w=0&k=20&c=PLIFqiNwamgtLORGB49P4fTJI3CGF1-bApzK8Xxz0-o="
+    },
+    {
+      "id":2,
+      "name":"land1",
+      "area":100,
+      "price":100000,
+      "location":"location1",
+      "owner":"owner1",
+      "description":"description1",
+      "image":"https://media.istockphoto.com/id/1372495059/photo/land-for-sale-sign-in-green-grass-field-for-housing-development-and-construction.jpg?s=612x612&w=0&k=20&c=PLIFqiNwamgtLORGB49P4fTJI3CGF1-bApzK8Xxz0-o="
+    },
+    {
+      "id":3,
+      "name":"land1",
+      "area":100,
+      "price":100000,
+      "location":"location1",
+      "owner":"owner1",
+      "description":"description1",
+      "image":"https://media.istockphoto.com/id/1372495059/photo/land-for-sale-sign-in-green-grass-field-for-housing-development-and-construction.jpg?s=612x612&w=0&k=20&c=PLIFqiNwamgtLORGB49P4fTJI3CGF1-bApzK8Xxz0-o="
+    },
+    {
+      "id":4,
+      "name":"land1",
+      "area":100,
+      "price":100000,
+      "location":"location1",
+      "owner":"owner1",
+      "description":"description1",
+      "image":"https://media.istockphoto.com/id/1372495059/photo/land-for-sale-sign-in-green-grass-field-for-housing-development-and-construction.jpg?s=612x612&w=0&k=20&c=PLIFqiNwamgtLORGB49P4fTJI3CGF1-bApzK8Xxz0-o="
+    }
+  ]
+}

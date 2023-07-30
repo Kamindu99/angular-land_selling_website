@@ -14,3 +14,8 @@
     font-size: 24px;
     padding-right: 40px;
 }
+
+.active{
+    color: #000;
+    font-weight: 700;
+}

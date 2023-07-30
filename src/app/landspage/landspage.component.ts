@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { LandsService } from '../services/lands.service';
+import { MatDialog } from '@angular/material/dialog';
+import { ViewdialogboxComponent } from '../viewdialogbox/viewdialogbox.component';
 
 export interface LandProps {
   id: number;
@@ -18,7 +20,7 @@ export interface LandProps {
 })
 export class LandspageComponent implements OnInit {
 
-  constructor(private _landService: LandsService) { }
+  constructor(private _landService: LandsService,private dialog: MatDialog) { }
 
   ngOnInit(): void {
     this.getLandsList();
@@ -58,6 +60,12 @@ export class LandspageComponent implements OnInit {
         console.log(err);
         this.isLoading = false;
       }
+    });
+  }
+
+  openDialog(data: any) {
+    const dialogRef = this.dialog.open(ViewdialogboxComponent, {
+      data
     });
   }
 

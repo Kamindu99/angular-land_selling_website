@@ -8,6 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatIconModule } from '@angular/material/icon';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { CarouselModule } from '@coreui/angular';
+import {MatDialog, MatDialogModule} from '@angular/material/dialog';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,6 +19,7 @@ import { AboutusComponent } from './aboutus/aboutus.component';
 import { LandspageComponent } from './landspage/landspage.component';
 import { ApartmentspageComponent } from './apartmentspage/apartmentspage.component';
 import { HousespageComponent } from './housespage/housespage.component';
+import { ViewdialogboxComponent } from './viewdialogbox/viewdialogbox.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,8 @@ import { HousespageComponent } from './housespage/housespage.component';
     AboutusComponent,
     LandspageComponent,
     ApartmentspageComponent,
-    HousespageComponent
+    HousespageComponent,
+    ViewdialogboxComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +43,8 @@ import { HousespageComponent } from './housespage/housespage.component';
     HttpClientModule,
     MatIconModule,
     MatProgressSpinnerModule,
-    CarouselModule
+    CarouselModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

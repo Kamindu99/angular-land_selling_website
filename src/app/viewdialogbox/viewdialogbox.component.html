@@ -1,0 +1,19 @@
+<div class="bodydialog">
+    <h1 mat-dialog-title>{{ empForm.name?.toUpperCase()}}</h1>
+    <div mat-dialog-content>
+    
+        <img mat-card-image src={{empForm.image}} class="landImage mb-4" alt="Photo of land">
+        <span class="disabled"> <mat-icon style="margin-bottom: -7px;">location_on</mat-icon> {{empForm.location}}</span>
+        <p> <mat-icon style="margin-bottom: -7px;">price_change</mat-icon> Rs.{{empForm?.price?.toLocaleString(undefined, {
+            minimumFractionDigits: 2,
+            maximumFractionDigits: 2
+            }) || 0.00}} Upward</p>
+    
+    </div>
+    <div mat-dialog-actions>
+        <div class="cardfooter">
+        <button mat-button mat-dialog-close>Close</button>
+        <button mat-button>BUY</button>
+        </div>
+    </div>
+</div>

@@ -2,7 +2,7 @@
 
 ### [Live Site](https://blueskylands.netlify.app/)
 
-![ Application](https://centurystone.com.ng/wp-content/uploads/2022/11/istockphoto-1355972382-170667a.jpg)
+![ Application](https://res.cloudinary.com/dmfljlyu1/image/upload/v1690718293/landsale_ky48wn.jpg)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4.
 

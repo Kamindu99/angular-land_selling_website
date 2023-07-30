@@ -27,7 +27,28 @@ export class HousespageComponent {
     this.getHouseList();
   }
 
-  houseData: HouseProps[] = []
+  houseData: HouseProps[] = [
+    {
+      "id":1,
+      "name":"FLORENCE CITY House",
+      "area":100,
+      "price":100000,
+      "location":"Ratnapura",
+      "owner":"Kamindu Gayantha",
+      "description":"description1",
+      "image":"https://e1.pxfuel.com/desktop-wallpaper/241/699/desktop-wallpaper-interior-design-room-house-home-apartment-condo-274-and-mobile-backgrounds-luxury-apartment.jpg"
+    },
+    {
+      "id":2,
+      "name":"Kandy CITY House",
+      "area":100,
+      "price":100000,
+      "location":"Ratnapura",
+      "owner":"Kamindu Gayantha",
+      "description":"description1",
+      "image":"https://www.propertysolutionsturkey.com/front/images/projects/bosphorus-view-apartments-with-private-pools/bosphorus-view-apartments-with-private-pools-303320110.jpg"
+    }
+  ]
   isLoading: boolean = false;
 
   getHouseList() {

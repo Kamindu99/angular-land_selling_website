@@ -26,7 +26,18 @@ export class ApartmentspageComponent implements OnInit{
     this.getApartmentList();
   }
 
-  apartmentData: ApartmentProps[] = []
+  apartmentData: ApartmentProps[] = [
+    {
+      "id":1,
+      "name":"FLORENCE CITY Apartment",
+      "area":100,
+      "price":100000,
+      "location":"Ratnapura",
+      "owner":"Kamindu Gayantha",
+      "description":"description1",
+      "image":"https://img.pikbest.com/origin/06/43/60/51dpIkbEsTsy3.jpg!w700wp"
+    }
+  ]
   isLoading: boolean = false;
 
   getApartmentList() {

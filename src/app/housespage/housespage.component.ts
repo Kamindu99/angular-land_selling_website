@@ -21,32 +21,32 @@ export interface HouseProps {
 })
 export class HousespageComponent {
 
-  constructor(private _landService: LandsService,private dialog: MatDialog) { }
-  
+  constructor(private _landService: LandsService, private dialog: MatDialog) { }
+
   ngOnInit(): void {
     this.getHouseList();
   }
 
   houseData: HouseProps[] = [
     {
-      "id":1,
-      "name":"FLORENCE CITY House",
-      "area":100,
-      "price":100000,
-      "location":"Ratnapura",
-      "owner":"Kamindu Gayantha",
-      "description":"description1",
-      "image":"https://e1.pxfuel.com/desktop-wallpaper/241/699/desktop-wallpaper-interior-design-room-house-home-apartment-condo-274-and-mobile-backgrounds-luxury-apartment.jpg"
+      "id": 1,
+      "name": "FLORENCE CITY House",
+      "area": 100,
+      "price": 100000,
+      "location": "Ratnapura",
+      "owner": "Kamindu Gayantha",
+      "description": "description1",
+      "image": "https://e1.pxfuel.com/desktop-wallpaper/241/699/desktop-wallpaper-interior-design-room-house-home-apartment-condo-274-and-mobile-backgrounds-luxury-apartment.jpg"
     },
     {
-      "id":2,
-      "name":"Kandy CITY House",
-      "area":100,
-      "price":100000,
-      "location":"Ratnapura",
-      "owner":"Kamindu Gayantha",
-      "description":"description1",
-      "image":"https://www.propertysolutionsturkey.com/front/images/projects/bosphorus-view-apartments-with-private-pools/bosphorus-view-apartments-with-private-pools-303320110.jpg"
+      "id": 2,
+      "name": "Kandy CITY House",
+      "area": 100,
+      "price": 100000,
+      "location": "Ratnapura",
+      "owner": "Gayantha Kamindu",
+      "description": "description1",
+      "image": "https://www.propertysolutionsturkey.com/front/images/projects/bosphorus-view-apartments-with-private-pools/bosphorus-view-apartments-with-private-pools-303320110.jpg"
     }
   ]
   isLoading: boolean = false;
@@ -67,7 +67,7 @@ export class HousespageComponent {
   }
 
   openDialog(data: any) {
-     this.dialog.open(ViewdialogboxComponent, {
+    this.dialog.open(ViewdialogboxComponent, {
       data
     });
   }

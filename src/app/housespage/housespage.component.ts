@@ -30,10 +30,10 @@ export class HousespageComponent {
   houseData: HouseProps[] = [
     {
       "id": 1,
-      "name": "FLORENCE CITY House",
+      "name": "Nugegoda CITY House",
       "area": 100,
       "price": 100000,
-      "location": "Ratnapura",
+      "location": "Nugegoda",
       "owner": "Kamindu Gayantha",
       "description": "description1",
       "image": "https://e1.pxfuel.com/desktop-wallpaper/241/699/desktop-wallpaper-interior-design-room-house-home-apartment-condo-274-and-mobile-backgrounds-luxury-apartment.jpg"
